@@ -9,18 +9,27 @@
     <link rel="stylesheet" href="css/03-feedback.css" />
   </head>
   <body>
-    <p><a href="index.html">Go back</a></p>
+    <p><a class="btn" href="index.html">Go back</a></p>
 
     <form class="feedback-form" autocomplete="off">
-      <label>
-        Email
-        <input type="email" name="email" autofocus />
+      <div class="flex-row logo">
+        <h1>Homework #8</h1>
+      </div>
+
+      <label class="flex-row">
+        <input
+          id="username"
+          class="lf--input"
+          placeholder="Enter your Email"
+          type="email"
+          name="email"
+          autofocus
+        />
       </label>
-      <label>
-        Message
+      <label class="flex-row">
         <textarea name="message" rows="8"></textarea>
       </label>
-      <button type="submit">Submit</button>
+      <button class="lf--submit" type="submit">Submit</button>
     </form>
 
     <script src="./js/03-feedback.js" type="module"></script>
